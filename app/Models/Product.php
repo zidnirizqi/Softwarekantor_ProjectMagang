@@ -25,25 +25,16 @@ class Product extends Model
         'stock' => 'integer',
     ];
 
-    /**
-     * Get the category that owns the product.
-     */
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
-    /**
-     * Get the formatted price.
-     */
     public function getFormattedPriceAttribute()
     {
         return 'Rp ' . number_format($this->price, 0, ',', '.');
     }
 
-    /**
-     * Get the image URL.
-     */
     public function getImageUrlAttribute()
     {
         if ($this->image) {
@@ -52,17 +43,11 @@ class Product extends Model
         return asset('images/no-image.png');
     }
 
-    /**
-     * Scope a query to only include active products.
-     */
     public function scopeActive($query)
     {
         return $query->where('status', 'active');
     }
 
-    /**
-     * Scope a query to only include products in stock.
-     */
     public function scopeInStock($query)
     {
         return $query->where('stock', '>', 0);

@@ -65,6 +65,7 @@
     <a href="{{ route('dashboard') }}">🏠 Dashboard</a>
     <a href="{{ route('admin.shop.index') }}" class="active">🛒 Shop Product</a>
     <a href="{{ route('admin.category.index') }}">📂 Category</a>
+    <a href="{{ route('admin.category.brand') }}">🏷 Brand</a>
     <a href="{{ route('admin.user.index') }}">👤 Users</a>
     <a href="{{ route('admin.profile.index') }}">⚙️ Profile</a>
     <a href="{{ route('admin.pages.index') }}">📄 Pages</a>
@@ -95,11 +96,6 @@
           <h1 class="display-6 fw-bold">🛒 Shop Products</h1>
           <p class="text-muted">Manage your product inventory and stock</p>
         </div>
-        {{-- <div class="col-md-4 text-end">
-          <a href="{{ route('admin.shop.create') }}" class="btn btn-primary">
-            <i class="fas fa-plus me-2"></i>Add New Product
-          </a>
-        </div> --}}
       </div>
 
       {{-- Stats Cards --}}
