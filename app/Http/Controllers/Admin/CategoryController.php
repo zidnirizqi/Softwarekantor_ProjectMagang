@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    // Ambil data dummy dari session atau set default
+    // Ambil data 
     private function getCategories(Request $request)
     {
         if (!$request->session()->has('categories')) {

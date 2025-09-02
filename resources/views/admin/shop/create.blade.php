@@ -25,10 +25,11 @@
     <a href="{{ route('dashboard') }}">🏠 Dashboard</a>
     <a href="{{ route('admin.shop.index') }}" class="active">🛒 Shop Product</a>
     <a href="{{ route('admin.category.index') }}">📂 Category</a>
-    <a href="{{ route('admin.category.brand') }}">🏷 Brand</a>
+    <a href="{{ route('admin.brand.index') }}">🏷 Brand</a>
+    <a href="{{ route('admin.pages.index') }}">📄 Pages</a>
     <a href="{{ route('admin.user.index') }}">👤 Users</a>
     <a href="{{ route('admin.profile.index') }}">⚙️ Profile</a>
-    <a href="{{ route('admin.pages.index') }}">📄 Pages</a>
+    
     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="mt-3">
       @csrf
       <button type="submit" class="btn btn-outline-danger btn-sm w-100">🚪 Logout</button>

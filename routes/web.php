@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ShopController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\BrandController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,9 +62,12 @@ Route::middleware(['auth'])->group(function () {
         Route::delete('/category/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
 
         // Brand (dummy view)
-        Route::get('/brand', function () {
-            return view('admin.category.brand');
-        })->name('category.brand');
+        Route::get('/brand', [BrandController::class, 'index'])->name('brand.index');
+        Route::get('/brand/create', [BrandController::class, 'create'])->name('brand.create');
+        Route::post('/brand', [BrandController::class, 'store'])->name('brand.store');
+        Route::get('/brand/{id}/edit', [BrandController::class, 'edit'])->name('brand.edit');
+        Route::put('/brand/{id}', [BrandController::class, 'update'])->name('brand.update');
+        Route::delete('/brand/{id}', [BrandController::class, 'destroy'])->name('brand.destroy');
 
         // Users (pakai resource biar lengkap CRUD)
         Route::resource('user', UserController::class);
