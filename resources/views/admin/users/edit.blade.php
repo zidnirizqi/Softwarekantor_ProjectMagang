@@ -19,6 +19,6 @@
         <small class="text-muted">Kosongkan jika tidak ingin mengganti password</small>
     </div>
     <button type="submit" class="btn btn-success">💾 Update</button>
-    <a href="{{ route('admin.user.index') }}" class="btn btn-secondary">⬅️ Kembali</a>
+    <a href="{{ route('admin.user.index') }}" class="btn btn-secondary">↩️ Back</a>
 </form>
 @endsection

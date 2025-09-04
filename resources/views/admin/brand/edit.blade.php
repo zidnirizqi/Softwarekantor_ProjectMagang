@@ -7,14 +7,14 @@
         @csrf
         @method('PUT')
         <div class="mb-3">
-            <label class="form-label">Nama Brand</label>
+            <label class="form-label">Brand Name</label>
             <input type="text" class="form-control" name="name" value="{{ $brand['name'] }}">
         </div>
         <div class="mb-3">
-            <label class="form-label">Deskripsi</label>
+            <label class="form-label">Description</label>
             <textarea class="form-control" name="description">{{ $brand['description'] }}</textarea>
         </div>
-        <button type="submit" class="btn btn-success">Update</button>
-        <a href="{{ route('admin.brand.index') }}" class="btn btn-secondary">Kembali</a>
+        <button type="submit" class="btn btn-success">💾 Update</button>
+        <a href="{{ route('admin.brand.index') }}" class="btn btn-secondary">↩️ Back</a>
     </form>
 @endsection

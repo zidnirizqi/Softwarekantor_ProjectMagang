@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="mb-3">
-        <a href="{{ route('admin.brand.create') }}" class="btn btn-primary btn-sm">➕ Tambah Brand</a>
+        <a href="{{ route('admin.brand.create') }}" class="btn btn-primary btn-sm">➕ Add New Brand</a>
     </div>
 
     @if (session('success'))
@@ -15,9 +15,9 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nama Brand</th>
-                <th>Deskripsi</th>
-                <th>Aksi</th>
+                <th>Brand Name</th>
+                <th>Description</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -31,7 +31,7 @@
                         <form action="{{ route('admin.brand.destroy', $brand['id']) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus brand ini?')">🗑 Hapus</button>
+                            <button class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus brand ini?')">🗑 Delete</button>
                         </form>
                     </td>
                 </tr>

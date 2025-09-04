@@ -4,12 +4,12 @@
 <div class="container">
     <h2 class="mb-4">📂 Category Management</h2>
 
-    <a href="{{ route('admin.category.create') }}" class="btn btn-primary mb-3">➕ Add Category</a>
+    <a href="{{ route('admin.category.create') }}" class="btn btn-primary mb-3">➕ Add New Category</a>
 
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th>#</th>
+                <th>ID</th>
                 <th>Category Name</th>
                 <th>Description</th>
                 <th>Created At</th>
@@ -24,11 +24,11 @@
                     <td>{{ $category['description'] }}</td>
                     <td>{{ $category['created_at'] }}</td>
                     <td>
-                        <a href="{{ route('admin.category.edit', $category['id']) }}" class="btn btn-sm btn-warning">✏️</a>
+                        <a href="{{ route('admin.category.edit', $category['id']) }}" class="btn btn-sm btn-warning">✏️ Edit</a>
                         <form action="{{ route('admin.category.destroy', $category['id']) }}" method="POST" style="display:inline-block;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin mau hapus?')">🗑️</button>
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Yakin mau hapus?')">🗑️ Delete</button>
                         </form>
                     </td>
                 </tr>

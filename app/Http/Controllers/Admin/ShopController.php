@@ -156,7 +156,7 @@ class ShopController extends Controller
         $product->update($data);
 
         return redirect()->route('admin.shop.index')
-            ->with('success', 'Product updated successfully!');
+            ->with('success', 'Product updated successfully');
     }
 
     /**
@@ -172,7 +172,7 @@ class ShopController extends Controller
         $product->delete();
 
         return redirect()->route('admin.shop.index')
-            ->with('success', 'Product deleted successfully!');
+            ->with('success', 'Product deleted successfully');
     }
 
     /**
@@ -184,6 +184,6 @@ class ShopController extends Controller
         $product->save();
 
         return redirect()->back()
-            ->with('success', 'Product status updated successfully!');
+            ->with('success', 'Product status updated successfully');
     }
 }

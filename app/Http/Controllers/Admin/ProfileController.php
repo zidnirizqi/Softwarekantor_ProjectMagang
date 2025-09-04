@@ -34,6 +34,6 @@ class ProfileController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
 
-        return redirect()->route('admin.profile.index')->with('success', 'Profil berhasil diperbarui!');
+        return redirect()->route('admin.profile.index')->with('success', 'Profile updated successfully');
     }
 }

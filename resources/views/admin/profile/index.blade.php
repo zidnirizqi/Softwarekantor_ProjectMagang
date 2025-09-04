@@ -34,19 +34,19 @@
 
   {{-- Main Content --}}
   <div class="main-content">
-      <h2>Profil Saya</h2>
+      <h2>My Profile</h2>
 
       @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
       @endif
 
       <table class="table table-bordered w-50">
-          <tr><th>Nama</th><td>{{ $user->name }}</td></tr>
+          <tr><th>Name</th><td>{{ $user->name }}</td></tr>
           <tr><th>Email</th><td>{{ $user->email }}</td></tr>
       </table>
 
-      <a href="{{ route('admin.profile.edit') }}" class="btn btn-primary">✏️ Edit Profil</a>
-      <a href="{{ route('dashboard') }}" class="btn btn-secondary">⬅️ Kembali</a>
+      <a href="{{ route('admin.profile.edit') }}" class="btn btn-primary">✏️ Edit Profile</a>
+      <a href="{{ route('dashboard') }}" class="btn btn-secondary">↩️ Back</a>
   </div>
 
 </body>

@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class BrandController extends Controller
 {
     private $brands = [
-        ['id' => 1, 'name' => 'Nike', 'description' => 'Brand olahraga terkenal.'],
-        ['id' => 2, 'name' => 'Adidas', 'description' => 'Brand olahraga Jerman.'],
-        ['id' => 3, 'name' => 'Puma', 'description' => 'Brand sepatu dan pakaian.'],
-        ['id' => 4, 'name' => 'Mills', 'description' => 'Brand sepatu dan pakaian lokal.'],
+        ['id' => 1, 'name' => 'Nike', 'description' => 'Brand olahraga terkenal'],
+        ['id' => 2, 'name' => 'Adidas', 'description' => 'Brand olahraga Jerman'],
+        ['id' => 3, 'name' => 'Puma', 'description' => 'Brand sepatu dan pakaian'],
+        ['id' => 4, 'name' => 'Mills', 'description' => 'Brand sepatu dan pakaian lokal'],
     ];
 
     public function index()
@@ -27,7 +27,7 @@ class BrandController extends Controller
 
     public function store(Request $request)
     {
-        return redirect()->route('admin.brand.index')->with('success', 'Brand berhasil ditambahkan (dummy).');
+        return redirect()->route('admin.brand.index')->with('success', 'Brand created successfully');
     }
 
     public function edit($id)
@@ -38,11 +38,11 @@ class BrandController extends Controller
 
     public function update(Request $request, $id)
     {
-        return redirect()->route('admin.brand.index')->with('success', 'Brand berhasil diupdate (dummy).');
+        return redirect()->route('admin.brand.index')->with('success', 'Brand updated successfully');
     }
 
     public function destroy($id)
     {
-        return redirect()->route('admin.brand.index')->with('success', 'Brand berhasil dihapus (dummy).');
+        return redirect()->route('admin.brand.index')->with('success', 'Brand deleted successfully');
     }
 }

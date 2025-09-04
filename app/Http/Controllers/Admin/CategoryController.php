@@ -92,7 +92,7 @@ class CategoryController extends Controller
 
         $this->saveCategories($request, $categories);
 
-        return redirect()->route('admin.category.index')->with('success', 'Category berhasil diupdate');
+        return redirect()->route('admin.category.index')->with('success', 'Category updated successfully ');
     }
 
     // Hapus category
@@ -104,6 +104,6 @@ class CategoryController extends Controller
 
         $this->saveCategories($request, $categories);
 
-        return redirect()->route('admin.category.index')->with('success', 'Category berhasil dihapus');
+        return redirect()->route('admin.category.index')->with('success', 'Category deleted succesfully');
     }
 }

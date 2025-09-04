@@ -12,7 +12,7 @@
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>
-          <th>#</th>
+          <th>ID</th>
           <th>Title</th>
           <th>Slug</th>
           <th>Status</th>

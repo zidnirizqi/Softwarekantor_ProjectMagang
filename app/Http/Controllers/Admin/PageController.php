@@ -28,7 +28,7 @@ class PageController extends Controller
 
         Page::create($request->only('title', 'content'));
 
-        return redirect()->route('admin.pages.index')->with('success', 'Page created successfully.');
+        return redirect()->route('admin.pages.index')->with('success', 'Page created successfully');
     }
 
     public function edit(Page $page)
@@ -45,7 +45,7 @@ class PageController extends Controller
 
         $page->update($request->only('title', 'content'));
 
-        return redirect()->route('admin.pages.index')->with('success', 'Page updated successfully.');
+        return redirect()->route('admin.pages.index')->with('success', 'Page updated successfully');
     }
 
     public function destroy(Page $page)

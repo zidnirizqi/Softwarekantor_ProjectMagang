@@ -85,7 +85,7 @@
           <h1 class="display-5 fw-bold">Hi, {{ auth()->user()->name }}</h1>
           <p class="col-md-8 fs-4">
             Welcome to the dashboard!<br>
-            Pilih menu di sidebar untuk mengelola data aplikasi kamu.
+            Select the menu in the sidebar to manage your application data.
           </p>
         </div>
       </div>

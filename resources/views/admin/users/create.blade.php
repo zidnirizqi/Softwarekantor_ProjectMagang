@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<h2>Tambah User</h2>
+<h2>Add Users</h2>
 
 <form action="{{ route('admin.user.store') }}" method="POST" class="w-50">
     @csrf
@@ -17,7 +17,7 @@
         <label for="password" class="form-label">Password</label>
         <input type="password" name="password" class="form-control" required>
     </div>
-    <button type="submit" class="btn btn-success">💾 Simpan</button>
-    <a href="{{ route('admin.user.index') }}" class="btn btn-secondary">⬅️ Kembali</a>
+    <button type="submit" class="btn btn-success">💾 Save</button>
+    <a href="{{ route('admin.user.index') }}" class="btn btn-secondary">↩️ Back</a>
 </form>
 @endsection
