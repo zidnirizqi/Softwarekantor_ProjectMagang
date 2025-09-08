@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Tambah Brand')
+@section('title', 'Add Brand')
 
 @section('content')
     <form action="{{ route('admin.brand.store') }}" method="POST">

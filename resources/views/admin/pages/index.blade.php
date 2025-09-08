@@ -6,7 +6,7 @@
 <div class="card shadow-sm">
   <div class="card-header d-flex justify-content-between align-items-center">
     <h5 class="mb-0">📄 Pages List</h5>
-    <a href="{{ route('admin.pages.create') }}" class="btn btn-primary btn-sm">➕ Add New Page</a>
+    <a href="{{ route('admin.pages.create') }}" class="btn btn-primary btn-sm">➕ Add New Pages</a>
   </div>
   <div class="card-body">
     <table class="table table-bordered table-striped">

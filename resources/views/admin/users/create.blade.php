@@ -6,7 +6,7 @@
 <form action="{{ route('admin.user.store') }}" method="POST" class="w-50">
     @csrf
     <div class="mb-3">
-        <label for="name" class="form-label">Nama</label>
+        <label for="name" class="form-label">Name</label>
         <input type="text" name="name" class="form-control" required>
     </div>
     <div class="mb-3">

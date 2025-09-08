@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Brand List')
+@section('title', 'Brand')
 
 @section('content')
     <div class="mb-3">
@@ -31,7 +31,7 @@
                         <form action="{{ route('admin.brand.destroy', $brand['id']) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus brand ini?')">🗑 Delete</button>
+                            <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this brand?')">🗑 Delete</button>
                         </form>
                     </td>
                 </tr>

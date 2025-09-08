@@ -98,7 +98,7 @@ class ShopController extends Controller
 
     public function storeDummy(Request $request)
     {
-        // Simulasi data tersimpan (dummy)
+        // Simulasi data tersimpan 
         $dummyProduct = [
             'name' => $request->name,
             'category' => $request->category,

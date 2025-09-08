@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit Page')
+@section('title', 'Edit Pages')
 
 @section('content')
 <div class="card shadow-sm">
   <div class="card-header">
-    <h5 class="mb-0">✏️ Edit Page</h5>
+    <h5 class="mb-0">✏️ Edit Pages</h5>
   </div>
   <div class="card-body">
     <form action="#" method="POST">
@@ -13,7 +13,7 @@
       @method('PUT')
 
       <div class="mb-3">
-        <label class="form-label">Page Title</label>
+        <label class="form-label">Pages Title</label>
         <input type="text" class="form-control" name="title" value="About Us">
       </div>
       <div class="mb-3">

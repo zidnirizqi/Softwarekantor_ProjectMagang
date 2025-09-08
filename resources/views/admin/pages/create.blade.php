@@ -1,17 +1,17 @@
 @extends('layouts.admin')
 
-@section('title', 'Create Page')
+@section('title', 'Create Pages')
 
 @section('content')
 <div class="card shadow-sm">
   <div class="card-header">
-    <h5 class="mb-0">➕ Create New Page</h5>
+    <h5 class="mb-0">➕ Create New Pages</h5>
   </div>
   <div class="card-body">
     <form action="#" method="POST">
       @csrf
       <div class="mb-3">
-        <label class="form-label">Page Title</label>
+        <label class="form-label">Pages Title</label>
         <input type="text" class="form-control" name="title" placeholder="Enter page title">
       </div>
       <div class="mb-3">

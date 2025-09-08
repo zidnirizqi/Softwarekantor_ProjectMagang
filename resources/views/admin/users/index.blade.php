@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title', 'Users')
+
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h2>List Users</h2>
@@ -29,7 +31,7 @@
                 <a href="{{ route('admin.user.edit', $user->id) }}" class="btn btn-warning btn-sm">✏️ Edit</a>
                 <form action="{{ route('admin.user.destroy', $user->id) }}" method="POST" class="d-inline">
                     @csrf @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin hapus user ini?')">🗑 Delete</button>
+                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this user?')">🗑 Delete</button>
                 </form>
             </td>
         </tr>

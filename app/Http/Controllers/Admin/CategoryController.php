@@ -12,8 +12,6 @@ class CategoryController extends Controller
     {
         if (!$request->session()->has('categories')) {
             $default = [
-                ['id' => 1, 'name' => 'Technology', 'description' => 'Tech news', 'created_at' => now()->toDateTimeString()],
-                ['id' => 2, 'name' => 'Sports', 'description' => 'Sports news', 'created_at' => now()->toDateTimeString()],
             ];
             $request->session()->put('categories', $default);
         }
@@ -61,7 +59,7 @@ class CategoryController extends Controller
 
         $this->saveCategories($request, $categories);
 
-        return redirect()->route('admin.category.index')->with('success', 'Category berhasil ditambahkan');
+        return redirect()->route('admin.category.index')->with('success', 'Category created successfully');
     }
 
     // Form edit category
@@ -104,6 +102,6 @@ class CategoryController extends Controller
 
         $this->saveCategories($request, $categories);
 
-        return redirect()->route('admin.category.index')->with('success', 'Category deleted succesfully');
+        return redirect()->route('admin.category.index')->with('success', 'Category deleted successfully');
     }
 }
