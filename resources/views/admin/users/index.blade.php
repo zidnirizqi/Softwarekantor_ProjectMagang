@@ -1,10 +1,10 @@
 @extends('layouts.admin')
 
-@section('title', 'Users')
+@section('title', 'List Users')
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h2>List Users</h2>
+    {{-- <h2>List Users</h2> --}}
     <a href="{{ route('admin.user.create') }}" class="btn btn-primary">➕ Add New Users</a>
 </div>
 
