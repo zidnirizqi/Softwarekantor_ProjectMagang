@@ -9,7 +9,7 @@
       <table class="table align-middle">
         <thead>
           <tr>
-            <th>#</th>
+            <th>ID</th>
             <th>Image</th>
             <th>Name</th>
             <th>Category</th>

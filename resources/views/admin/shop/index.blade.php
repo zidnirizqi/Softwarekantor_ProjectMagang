@@ -224,7 +224,7 @@
             <table class="table table-hover align-middle">
               <thead class="table-dark">
                 <tr>
-                  <th>#</th>
+                  <th>ID</th>
                   <th>Image</th>
                   <th>Product Details</th>
                   <th>Category</th>
