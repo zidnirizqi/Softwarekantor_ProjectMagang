@@ -6,7 +6,7 @@
 <div class="card shadow-sm">
   <div class="card-header">
     <h5 class="mb-0">✏️ Edit Pages</h5>
-  </div>
+   </div>
   <div class="card-body">
     <form action="#" method="POST">
       @csrf
@@ -20,11 +20,11 @@
         <label class="form-label">Slug</label>
         <input type="text" class="form-control" name="slug" value="about-us">
       </div>
-      <div class="mb-3">
+    <div class="mb-3">
         <label class="form-label">Content</label>
         <textarea class="form-control" name="content" rows="5">This is about us page content...</textarea>
       </div>
-      <div class="mb-3">
+    <div class="mb-3">
         <label class="form-label">Status</label>
         <select class="form-select" name="status">
           <option value="published" selected>Published</option>
