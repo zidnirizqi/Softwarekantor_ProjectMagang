@@ -8,11 +8,6 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\BrandController;
 
-/*
-|--------------------------------------------------------------------------
-| Route untuk Guest (belum login)
-|--------------------------------------------------------------------------
-*/
 
 Route::get('/', function () {
     return redirect()->route('login'); // langsung redirect ke login
@@ -26,11 +21,6 @@ Route::get('registration', [AuthController::class, 'registration'])->name('regis
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 
 
-/*
-|--------------------------------------------------------------------------
-| Route setelah login (butuh auth)
-|--------------------------------------------------------------------------
-*/
 Route::middleware(['auth'])->group(function () {
 
     // Dashboard utama
